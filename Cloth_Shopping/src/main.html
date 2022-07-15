@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css"/>
+</head>
+
+<body style="background-color: #3F444F" align="center">
+    <section>
+        <div><img src="imgs/logo.png" width="120" height="120" alt="img loss"</div>
+    </section>
+    
+    <section>
+        <div class="Container">
+            <span class="Container test1"><img src="imgs/yellow_t.png" width="40" height="40" alt="img loss" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"/></span>
+            <span class="Container test1"><img src="imgs/yellow_s.png" width="40" height="40" alt="img loss" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"/></span>
+            <span class="Container test1"><img src="imgs/yellow_p.png" width="40" height="40" alt="img loss" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"/></span>
+            
+            <span class="Container ColorBox" style="background-color: #2E73AE" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">Blue</span>
+            <span class="Container ColorBox" style="background-color: #FFBB21" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">Yellow</span>
+            <span class="Container ColorBox" style="background-color: #FF8B85" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)">Pink</span>    
+        </div>
+    </section>
+
+    <section>
+        <div class="content" style="overflow: auto">
+            <ul>
+                <li class="item"><img src="imgs/pink_s.png" width="40" height="40" alt="loss"/> female, larger size</li>                        
+                <li class="item"><img src="imgs/pink_t.png" width="40" height="40" alt="loss"/> female, larger size</li>
+                <li class="item"><img src="imgs/pink_p.png" width="40" height="40" alt="loss"/> female, larger size</li>
+                <li class="item"><img src="imgs/blue_s.png" width="40" height="40" alt="loss"/> male, large size</li>
+                <li class="item"><img src="imgs/blue_t.png" width="40" height="40" alt="loss"/>male, large size</li>
+                <li class="item"><img src="imgs/blue_p.png" width="40" height="40" alt="loss" /> man, small size</li>
+                <li class="item"><img src="imgs/yellow_p.png" width="40" height="40" alt="loss"/> man, large size</li>
+                <li class="item"><img src="imgs/yellow_s.png" width="40" height="40" alt="loss"/> female, small size</li>
+                <li class="item"><img src="imgs/yellow_t.png" width="40" height="40" alt="loss"/> female, small size</li>
+                <li class="item"><img src="imgs/blue_s.png" width="40" height="40" alt="loss"/> male, large size</li>
+                <li class="item"><img src="imgs/blue_t.png" width="40" height="40" alt="loss"/>male, large size</li>
+                <li class="item"><img src="imgs/blue_p.png" width="40" height="40" alt="loss" /> man, small size</li>
+                <li class="item"><img src="imgs/yellow_p.png" width="40" height="40" alt="loss"/> man, large size</li>
+
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        function zoomIn(event) {
+            event.target.style.transform = "scale(1.2)";
+            event.target.style.zIndex = 1;
+            event.target.style.transition = "all 0.5s";
+        }
+    
+        function zoomOut(event) {
+            event.target.style.transform = "scale(1)";
+            event.target.style.zIndex = 0;
+            event.target.style.transition = "all 0.001s";
+        }
+    </script>
+</body>
+</html>
